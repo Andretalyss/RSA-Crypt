@@ -171,11 +171,7 @@ void WriteArchive(){
     if(!arq)
         puts("Don't open");
 
-    int i=0;
-    while(enc[i] != -1){
     fwrite(enc,1,sizeof(enc),arq);
-    i++;
-    }
-
+    
     fclose(arq);
 }
